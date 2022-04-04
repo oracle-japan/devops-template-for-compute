@@ -1,0 +1,10 @@
+version: 1.0
+component: deployment
+files:  
+  - source: /
+    destination: /tmp/
+steps:
+  - stepType: Command
+    name: Start Application
+    command:  java -jar ./oke-atp-handson.jar
+    timeoutInSeconds: 600

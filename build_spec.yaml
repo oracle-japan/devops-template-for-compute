@@ -1,0 +1,22 @@
+version: 0.1
+component: build                    
+timeoutInSeconds: 10000             
+runAs: root                         
+shell: bash                                  
+   
+steps:
+  - type: Command
+    name: "Maven Build"
+    command: |
+      mvn package
+    onFailure:
+      - type: Command
+        command: |
+          echo "Failured Maven Build"
+        timeoutInSeconds: 10000
+        runAs: root
+
+outputArtifacts:
+  - name: handson_jar
+    type: BINARY
+    location: ${OCI_PRIMARY_SOURCE_DIR}/target/oke-atp-handson.jar
