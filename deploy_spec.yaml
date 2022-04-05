@@ -6,5 +6,5 @@ files:
 steps:
   - stepType: Command
     name: Start Application
-    command:  java -jar ./oke-atp-handson.jar
+    command:  java -jar ./devops-demo-app-1.0.jar &
     timeoutInSeconds: 600

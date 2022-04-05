@@ -19,4 +19,4 @@ steps:
 outputArtifacts:
   - name: handson_jar
     type: BINARY
-    location: ${OCI_PRIMARY_SOURCE_DIR}/target/oke-atp-handson.jar
+    location: ${OCI_PRIMARY_SOURCE_DIR}/target/devops-demo-app-1.0.jar
