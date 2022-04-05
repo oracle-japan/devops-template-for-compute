@@ -6,5 +6,5 @@ files:
 steps:
   - stepType: Command
     name: Start Application
-    command:  nohup java -jar ./devops-demo-app-1.0.jar &
+    command:  nohup java -jar /tmp/devops-demo-app-1.0.jar &
     timeoutInSeconds: 600
