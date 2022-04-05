@@ -1,0 +1,12 @@
+.header {
+    padding-top: 5px; /* 画像上部の余白*/
+    padding-bottom: 5px; /* 画像下部の余白*/
+    height: initial;
+    height: 250px; /* 画像の高さ */
+    background-size: contain;
+}
+@media (max-width: 480px) {
+.header {
+    height: 150px; /* 画像の高さ */
+}
+}
